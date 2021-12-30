@@ -9,6 +9,7 @@ var pig1,pig2;
 var log1,log2;
 var bird;
 var backgroundImg;
+var platform; 
 
 var box5,log3,log4;
 function preload() {
@@ -25,7 +26,7 @@ function setup(){
     box2 = new Box(920,320,70,70);
     pig1 = new Pig(810,350);
     log1 = new log(810,260,300,PI/2);
-
+    
 
     //piramide 2
     box3 =  new Box(700,240,70,70);
@@ -40,7 +41,7 @@ function setup(){
     bird = new Bird(100,100);
 
     ground =  new Ground(600,height,1200,20);
-
+    platform = new Ground(150, 305, 300, 170);
     
     
 
@@ -80,6 +81,9 @@ function draw(){
     log3.display();
     log4.display();
     bird.display();
+
+    platform.display();
+    
     /*rectMode(CENTER);
     rect(ground.position.x,ground.position.y,400,20);
 
